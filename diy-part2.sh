@@ -12,3 +12,5 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
+sed -i 's/channel="36"/channel="157"/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/5180 MHz/5785 MHz/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
